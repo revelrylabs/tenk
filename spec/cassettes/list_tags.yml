@@ -1,0 +1,278 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/users//users/30256/tags?fields=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sat, 28 Jan 2017 00:01:15 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 404 Not Found
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 6f3085356309e0f5d2ff8583581d980a
+      X-Runtime:
+      - '0.054905'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '9'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: Not Found
+    http_version: 
+  recorded_at: Sat, 28 Jan 2017 00:01:15 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/users/30256/tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 28 Jan 2017 00:03:14 GMT
+      Etag:
+      - '"2e8d9e9f90c1c217d0a4dfb783ba6637-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 777922f27ce8a1c058f9536b8478229a
+      X-Runtime:
+      - '0.028700'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '128'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"paging":{"per_page":20,"page":1,"previous":null,"self":"/api/v1/users/30256/tags?user_id=30256&page=1","next":null},"data":[]}
+    http_version: 
+  recorded_at: Sat, 28 Jan 2017 00:03:14 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/projects/183760/tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 31 Jan 2017 00:06:42 GMT
+      Etag:
+      - '"fdbe323080808b1001f06088ccf82e8d-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - d49740b80c8129bb294e7ea1388995a9
+      X-Runtime:
+      - '0.028367'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"paging":{"per_page":20,"page":1,"previous":null,"self":"/api/v1/projects/183760/tags?project_id=183760&page=1","next":null},"data":[]}
+    http_version: 
+  recorded_at: Tue, 31 Jan 2017 00:06:42 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/users/30256/tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 03 Feb 2017 00:35:46 GMT
+      Etag:
+      - '"44c588c28b02c67c80df8c1475f2bd3b-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 0c6777482721f479603954c67a04f69a
+      X-Runtime:
+      - '0.027756'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '145'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"paging":{"per_page":20,"page":1,"previous":null,"self":"/api/v1/users/30256/tags?user_id=30256&page=1","next":null},"data":[{"id":104978,"value":"104977"}]}
+    http_version: 
+  recorded_at: Fri, 03 Feb 2017 00:35:46 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/projects/183760/tags
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 03 Feb 2017 00:35:59 GMT
+      Etag:
+      - '"fdbe323080808b1001f06088ccf82e8d-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - b2e79cf77749200c276cfb73a10adab3
+      X-Runtime:
+      - '0.023723'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '132'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"paging":{"per_page":20,"page":1,"previous":null,"self":"/api/v1/projects/183760/tags?project_id=183760&page=1","next":null},"data":[]}
+    http_version: 
+  recorded_at: Fri, 03 Feb 2017 00:35:59 GMT
+recorded_with: VCR 2.9.3

@@ -1,0 +1,278 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/projects/183760/assignments/30256
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 27 Jan 2017 23:19:30 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 404 Not Found
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - b876264cb1be082129d5bd87fe612671
+      X-Runtime:
+      - '0.075891'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '23'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"message":"not found"}'
+    http_version: 
+  recorded_at: Fri, 27 Jan 2017 23:19:30 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/projects/183760/assignments/186877
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 27 Jan 2017 23:26:57 GMT
+      Etag:
+      - '"b443c84ff27f5010650a07aa5f979c66-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 982c02b2c4c9108bcde044e8ea46c4e1
+      X-Runtime:
+      - '0.019854'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '222'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"id":186877,"allocation_mode":"percent","percent":0.5,"user_id":30256,"assignable_id":183760,"ends_at":"2017-01-31","starts_at":"2017-01-01","bill_rate":666.0,"bill_rate_id":319904,"repetition_id":null,"created_at":"2017-01-27T23:25:58Z","updated_at":"2017-01-27T23:26:41Z","all_day_assignment":true,"resource_request_id":null,"status":null}
+    http_version: 
+  recorded_at: Fri, 27 Jan 2017 23:26:57 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/users/30256/assignments/186842
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 31 Jan 2017 00:17:15 GMT
+      Etag:
+      - '"d09ea50d3fc5f245b1e3a0b0e4709704-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - b7fe7c52f5a55c784cd67c1c0b1f46ad
+      X-Runtime:
+      - '0.023059'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '219'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"id":186842,"allocation_mode":"percent","percent":1.0,"user_id":30256,"assignable_id":183765,"ends_at":"2017-01-31","starts_at":"2017-01-26","bill_rate":250.0,"bill_rate_id":319904,"repetition_id":null,"created_at":"2017-01-27T00:07:10Z","updated_at":"2017-01-27T00:07:10Z","all_day_assignment":true,"resource_request_id":null,"status":null}
+    http_version: 
+  recorded_at: Tue, 31 Jan 2017 00:17:15 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/projects/183760/assignments/186877
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 03 Feb 2017 00:35:53 GMT
+      Etag:
+      - '"b443c84ff27f5010650a07aa5f979c66-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - e9f956e2efc4afaf2dcc582d83120023
+      X-Runtime:
+      - '0.023894'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '222'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"id":186877,"allocation_mode":"percent","percent":0.5,"user_id":30256,"assignable_id":183760,"ends_at":"2017-01-31","starts_at":"2017-01-01","bill_rate":666.0,"bill_rate_id":319904,"repetition_id":null,"created_at":"2017-01-27T23:25:58Z","updated_at":"2017-01-27T23:26:41Z","all_day_assignment":true,"resource_request_id":null,"status":null}
+    http_version: 
+  recorded_at: Fri, 03 Feb 2017 00:35:53 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/users/30256/assignments/186842
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 03 Feb 2017 00:35:58 GMT
+      Etag:
+      - '"2bf227250ffaea6e3a960ebba362d83d-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 6e1070fa99355a0449bd0fc9a439c78e
+      X-Runtime:
+      - '0.020619'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '225'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"id":186842,"allocation_mode":"percent","percent":0.5,"user_id":30256,"assignable_id":183765,"ends_at":"2017-01-31","starts_at":"2017-01-26","bill_rate":250.0,"bill_rate_id":319904,"repetition_id":null,"created_at":"2017-01-27T00:07:10Z","updated_at":"2017-01-31T00:17:16Z","all_day_assignment":true,"resource_request_id":null,"status":null}
+    http_version: 
+  recorded_at: Fri, 03 Feb 2017 00:35:58 GMT
+recorded_with: VCR 2.9.3

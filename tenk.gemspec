@@ -1,0 +1,22 @@
+require File.expand_path('../lib/version', __FILE__)
+
+Gem::Specification.new do |s|
+  s.name        = 'tenk'
+  s.version     = Tenk::VERSION
+  s.date        = '2017-01-25'
+  s.summary     = 'An unofficial ruby gem for the 10,000ft API'
+  s.description = 'This gem provides an API wrapper for working with the 10k plans API.'
+  s.authors     = ['Robert Prehn']
+  s.email       = 'prehnra@gmail.com'
+  s.files       = ['lib/tenk.rb']
+  s.homepage    =
+    'http://rubygems.org/gems/tenk'
+  s.license     = 'MIT'
+
+  s.add_dependency 'hashie',      '>= 3.4'
+  s.add_dependency 'faraday',     '~> 0.8', '< 0.10'
+  s.add_dependency 'activesupport'
+
+  s.add_development_dependency 'bundler'
+  s.add_development_dependency 'rake', '< 11.0'
+end

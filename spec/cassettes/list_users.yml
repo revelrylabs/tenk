@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/users?fields=&page=1&per_page=20&with_archived=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 27 Jan 2017 20:56:07 GMT
+      Etag:
+      - '"9d53e71c404c5ea7ce42ddab704922df-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 1fb90c731dffd83c034e4d6ad33852b2
+      X-Runtime:
+      - '0.028217'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '662'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"paging":{"per_page":20,"page":1,"previous":null,"self":"/api/v1/users?fields=&per_page=20&with_archived=false&page=1","next":null},"data":[{"id":30256,"first_name":"Robert","last_name":"Prehn","archived":false,"display_name":"Robert Prehn","email":"robert+10k_sandbox@revelry.co","user_type_id":1,"billable":true,"hire_date":null,"termination_date":null,"mobile_phone":null,"office_phone":null,"deleted_at":null,"deleted":false,"account_owner":true,"invitation_pending":false,"user_settings":917741,"guid":"bac488bf-203e-40fc-bc2c-1206aee0bab7","employee_number":null,"billability_target":100.0,"billrate":250.0,"role":"VP","discipline":"Engineer","location":"NOLA","created_at":"2017-01-25T23:13:44Z","has_login":true,"login_type":"default","archived_at":null,"thumbnail":"https://d1zljzhvpuyaiz.cloudfront.net/bac488bf-203e-40fc-bc2c-1206aee0bab7/45636647-4803-4445-8283-cc87a8d0fc85.png"}]}
+    http_version:
+  recorded_at: Fri, 27 Jan 2017 20:56:07 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/projects/183760/users?fields=&page=1&per_page=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 30 Jan 2017 22:10:52 GMT
+      Etag:
+      - '"75ab72b9c1dcab84def69e1820d51912-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - fceb06773eb5046ec539966752711cee
+      X-Runtime:
+      - '0.041124'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '559'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"paging":{"per_page":20,"page":1,"previous":null,"self":"/api/v1/projects/183760/users?fields=&per_page=20&project_id=183760&page=1","next":null},"data":[{"id":30256,"first_name":"Test","last_name":"Prehn","archived":false,"display_name":"Test Prehn","email":"robert+10k_sandbox@revelry.co","user_type_id":1,"billable":true,"hire_date":null,"termination_date":null,"mobile_phone":null,"office_phone":null,"deleted_at":null,"deleted":false,"account_owner":true,"invitation_pending":false,"user_settings":917741,"guid":"bac488bf-203e-40fc-bc2c-1206aee0bab7","employee_number":null,"billability_target":100.0,"billrate":250.0,"role":"VP","discipline":"Engineer","location":"NOLA","created_at":"2017-01-25T23:13:44Z","has_login":true,"login_type":"default","archived_at":null,"thumbnail":"https://d1zljzhvpuyaiz.cloudfront.net/bac488bf-203e-40fc-bc2c-1206aee0bab7/45636647-4803-4445-8283-cc87a8d0fc85.png"}]}
+    http_version:
+  recorded_at: Mon, 30 Jan 2017 22:10:52 GMT
+- request:
+    method: get
+    uri: https://vnext.10000ft.com/api/v1/projects/183760/users?fields=&page=1&per_page=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 03 Feb 2017 00:35:58 GMT
+      Etag:
+      - '"75ab72b9c1dcab84def69e1820d51912-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 34e36f9259a687e359aeb43245cedb4c
+      X-Runtime:
+      - '0.034723'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '559'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"paging":{"per_page":20,"page":1,"previous":null,"self":"/api/v1/projects/183760/users?fields=&per_page=20&project_id=183760&page=1","next":null},"data":[{"id":30256,"first_name":"Test","last_name":"Prehn","archived":false,"display_name":"Test Prehn","email":"robert+10k_sandbox@revelry.co","user_type_id":1,"billable":true,"hire_date":null,"termination_date":null,"mobile_phone":null,"office_phone":null,"deleted_at":null,"deleted":false,"account_owner":true,"invitation_pending":false,"user_settings":917741,"guid":"bac488bf-203e-40fc-bc2c-1206aee0bab7","employee_number":null,"billability_target":100.0,"billrate":250.0,"role":"VP","discipline":"Engineer","location":"NOLA","created_at":"2017-01-25T23:13:44Z","has_login":true,"login_type":"default","archived_at":null,"thumbnail":"https://d1zljzhvpuyaiz.cloudfront.net/bac488bf-203e-40fc-bc2c-1206aee0bab7/45636647-4803-4445-8283-cc87a8d0fc85.png"}]}
+    http_version:
+  recorded_at: Fri, 03 Feb 2017 00:35:58 GMT
+recorded_with: VCR 2.9.3

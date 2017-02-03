@@ -1,0 +1,175 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://vnext.10000ft.com/api/v1/users/30256/time_entries?date=2017-01-01&project_id=183760
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 31 Jan 2017 00:25:44 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 403 Forbidden
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 756c69090e812841e315211a06d39aab
+      X-Runtime:
+      - '0.282007'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '94'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"bad data","errors":["Hours is required when is_suggestion
+        is false"]}'
+    http_version: 
+  recorded_at: Tue, 31 Jan 2017 00:25:44 GMT
+- request:
+    method: post
+    uri: https://vnext.10000ft.com/api/v1/users/30256/time_entries?date=2017-01-01&hours=0.5&project_id=183760
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 31 Jan 2017 00:26:44 GMT
+      Etag:
+      - '"d62825993bed8b1d3d9160a4e01b3ac5-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - e95da482257eef9af16fe790b4c5a5a1
+      X-Runtime:
+      - '0.094492'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '201'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"id":13037217,"assignable_id":183760,"assignable_type":"Project","user_id":30256,"bill_rate":666.0,"bill_rate_id":319904,"date":"2017-01-01","hours":0.5,"scheduled_hours":null,"notes":null,"task":null,"is_suggestion":false,"created_at":"2017-01-31T00:26:45Z","updated_at":"2017-01-31T00:26:45Z"}
+    http_version: 
+  recorded_at: Tue, 31 Jan 2017 00:26:45 GMT
+- request:
+    method: post
+    uri: https://vnext.10000ft.com/api/v1/users/30256/time_entries?date=2017-01-01&hours=0.5&project_id=183760
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Auth:
+      - "<TENK_TOKEN>"
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Fri, 03 Feb 2017 00:35:48 GMT
+      Etag:
+      - '"74e7c3709fbee6e82497d111b7ef4e4e-gzip"'
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Status:
+      - 200 OK
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Phusion Passenger 4.0.58
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - e0d7d6e35b6fea3ce4acbbed9f3487d4
+      X-Runtime:
+      - '0.078757'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '203'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"id":13037408,"assignable_id":183760,"assignable_type":"Project","user_id":30256,"bill_rate":666.0,"bill_rate_id":319904,"date":"2017-01-01","hours":0.5,"scheduled_hours":null,"notes":null,"task":null,"is_suggestion":false,"created_at":"2017-02-03T00:35:48Z","updated_at":"2017-02-03T00:35:48Z"}
+    http_version: 
+  recorded_at: Fri, 03 Feb 2017 00:35:48 GMT
+recorded_with: VCR 2.9.3
