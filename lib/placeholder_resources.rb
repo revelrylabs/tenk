@@ -1,6 +1,9 @@
 require 'hashie'
 
 module Tenk
+  # API methods for PlaceholderResources, which are like Users, except they
+  # don't represent a specific person, but rather a Placeholder on the schedule
+  # for a certain kind of person / discipline
   class PlaceholderResources < ::Tenk::Resource
     # The valid parameters for a PlaceholderResources list request
     class ListRequest < ::Hashie::Trash

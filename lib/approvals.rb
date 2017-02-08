@@ -26,10 +26,18 @@ module Tenk
     class UpdateRequest < CreateRequest
     end
 
+    # List Approvals from this 10k account
+    # @param opts [Hash] the query parameters for the list request
+    # @return [Hashie::Mash] the API response as a Hashie::Mash
+    # @see Tenk::Approvals::ListRequest
     def list(opts = {})
       super(ListRequest.new(opts))
     end
 
+    # Get one Approval from the 10k account
+    # @param id [Integer] the id of the Approval
+    # @return [Hashie::Mash] the API response as a Hashie::Mash
+    # @see Tenk::Approvals::GetRequest
     def get(id, opts = {})
       super(id, GetRequest.new(opts))
     end

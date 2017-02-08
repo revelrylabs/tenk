@@ -25,8 +25,8 @@ module Tenk
       property :enddate
     end
 
-    class UpdateRequest < CreateRequest
-    end
+    # The valid paramters for a BillRate update request
+    class UpdateRequest < CreateRequest; end
 
     # FIXME: LIST does not work due to permissions of API users
 
@@ -46,6 +46,10 @@ module Tenk
     #   super(CreateRequest.new(opts))
     # end
 
+    # Update a BillRate for this 10k account
+    # @param id [Integer] the id of the bill rate
+    # @return [Hashie::Mash] the API response as a Hashie::Mash
+    # @see UpdateRequest
     def update(id, opts = {})
       super(id, UpdateRequest.new(opts))
     end

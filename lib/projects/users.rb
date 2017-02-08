@@ -13,6 +13,11 @@ module Tenk
       property :page, default: 1
     end
 
+    # List Users for a single project
+    # @param project_id [Integer] the id of the project
+    # @param opts [Hash] the query parameters to add to list request
+    # @return [Hashie::Mash] the API response as a Hashie::Mash
+    # @see Tenk::Projects::Users::ListRequest
     def list(project_id, opts = {})
       super(project_id, ListRequest.new(opts))
     end

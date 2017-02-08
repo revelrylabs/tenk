@@ -22,18 +22,40 @@ module Tenk
       property :phase_name
     end
 
+    # List Phases for a single project
+    # @param project_id [Integer] the id of the project
+    # @param opts [Hash] the query parameters to add to list request
+    # @return [Hashie::Mash] the API response as a Hashie::Mash
+    # @see Tenk::Projects::Phases::ListRequest
     def list(project_id, opts = {})
       super(project_id, ListRequest.new(opts))
     end
 
+    # Get a single Assignment for this project
+    # @param project_id [Integer] the id of the project
+    # @param phase_id [Integer] the id of the phase
+    # @param opts [Hash] the query parameters to add to the get request
+    # @return [Hashie::Mash] the response as a Hashie::Mash
+    # @see Tenk::Projects::Phases::GetRequest
     def get(project_id, phase_id, opts = {})
       super(project_id, phase_id, GetRequest.new(opts))
     end
 
+    # Create a new Assignment for this project
+    # @param project_id [Integer] the id of the project
+    # @param opts [Hash] the post parameters to add to the create request
+    # @return [Hashie::Mash] the API response as a Hashie::Mash
+    # @see Tenk::Projects::Phases::CreateRequest
     def create(project_id, opts = {})
       super(project_id, CreateRequest.new(opts))
     end
 
+    # Update an Assignment for this project
+    # @param project_id [Integer] the id of the project
+    # @param phase_id [Integer] the id of the phase
+    # @param opts [Hash] the post parameters to add to the create request
+    # @return [Hashie::Mash] the API response as a Hashie::Mash
+    # @see Tenk::Projects::Phases::UpdateRequest
     def update(project_id, phase_id, opts = {})
       super(project_id, phase_id, UpdateRequest.new(opts))
     end
