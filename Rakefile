@@ -11,15 +11,14 @@ FileList['tasks/**/*.rake'].each(&method(:import))
 task default: [:spec, :features]
 
 namespace :doc do
-  begin
-    require 'yard'
-    YARD::Rake::YardocTask.new do |task|
-      task.files   = ['lib/**/*.rb']
-      task.options = [
-        '--output-dir', 'doc/yard',
-        '--markup', 'markdown',
-      ]
-    end
-  rescue LoadError
+  require 'yard'
+  YARD::Rake::YardocTask.new do |task|
+    task.files   = ['lib/**/*.rb']
+    task.options = [
+      '--output-dir',
+      'doc/yard',
+      '--markup',
+      'markdown',
+    ]
   end
 end
