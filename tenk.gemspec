@@ -8,15 +8,17 @@ Gem::Specification.new do |s|
   s.description = 'This gem provides an API wrapper for working with the 10k plans API.'
   s.authors     = ['Robert Prehn']
   s.email       = 'prehnra@gmail.com'
-  s.files       = ['lib/tenk.rb']
+  s.files       = Dir['{lib}/**/*']
   s.homepage    =
     'http://rubygems.org/gems/tenk'
   s.license     = 'MIT'
 
-  s.add_dependency 'hashie',      '>= 3.4'
-  s.add_dependency 'faraday',     '~> 0.8', '< 0.10'
-  s.add_dependency 'activesupport'
+  s.executables << 'tenk'
 
-  s.add_development_dependency 'bundler'
+  s.add_dependency 'hashie',      '~> 3'
+  s.add_dependency 'faraday',     '~> 0.8', '< 0.10'
+  s.add_dependency 'activesupport', '~> 3'
+
+  s.add_development_dependency 'bundler', '~> 1'
   s.add_development_dependency 'rake', '< 11.0'
 end

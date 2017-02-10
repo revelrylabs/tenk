@@ -1,0 +1,82 @@
+#!/usr/bin/env ruby
+
+require 'bundler'
+Bundler.setup(:default)
+require 'optparse'
+require 'tenk'
+
+options = {}
+
+opt_parser = OptionParser.new do |opt|
+  opt.banner = "Usage: tenk #{$PROGRAM_NAME} COMMAND"
+  opt.separator ''
+  opt.separator 'Commands'
+  opt.separator '  list_people: list people in your 10k account'
+  opt.separator '  list_projects: list projects in your 10k account'
+  opt.separator ''
+  opt.separator 'Options'
+
+  opt.on('-h', '--help', 'help') do
+    puts opt_parser
+  end
+end
+
+opts = opt_parser.parse!
+
+def client
+  token = ENV['TENK_TOKEN'] || fail('No api token set. Set TENK_TOKEN environment variable.')
+  @_client ||= Tenk.new token: token, api_base: ENV['TENK_API_BASE']
+end
+
+def list_people
+  users = []
+  page = 1
+  loop do
+    response = client.users.list(page: page)
+    new_users = response.data
+    users << new_users
+    break unless response.paging.next
+    page += 1
+  end
+  users.flatten!
+  discipline_groups = users.group_by(&:discipline)
+  discipline_groups.map do |discipline, group|
+    puts ''
+    puts discipline
+    group.each do |person|
+      puts "  - [ ] #{person.display_name}"
+    end
+    puts ''
+  end
+end
+
+def list_projects
+  projects = []
+  page = 1
+  loop do
+    response = client.projects.list(page: page)
+    new_projects = response.data
+    projects << new_projects
+    break unless response.paging.next
+    page += 1
+  end
+  projects.flatten!
+  project_groups = projects.sort_by(&:name).group_by(&:project_state)
+  project_groups.each do |state, projects|
+    puts ''
+    puts state
+    projects.each do |project|
+      puts "  - [ ] #{project.name}"
+    end
+    puts ''
+  end
+end
+
+case ARGV[0]
+when 'list_people'
+  list_people
+when 'list_projects'
+  list_projects
+else
+  puts opt_parser
+end

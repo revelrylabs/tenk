@@ -1,7 +1,6 @@
 require 'faraday'
 require 'hashie'
 require 'json'
-require 'byebug'
 
 require_relative './configuration'
 require_relative './resource'
