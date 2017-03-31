@@ -10,6 +10,8 @@ module Tenk
       property :to
       property :with_suggestions
       property :fields
+      property :per_page
+      property :page
     end
 
     # Valid parameters for a time entry get requests
