@@ -8,7 +8,7 @@ end
 
 FileList['tasks/**/*.rake'].each(&method(:import))
 
-task default: [:spec, :features]
+task default: [:spec]
 
 namespace :doc do
   require 'yard'
