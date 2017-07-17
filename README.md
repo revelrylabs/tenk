@@ -1,3 +1,5 @@
+Master build status: ![TravisCI Build Status](https://travis-ci.org/revelrylabs/tenk.svg?branch=master)
+
 # Tenk
 
 Tenk is an API wrapper Ruby gem for the 10,000ft Plans API. See
