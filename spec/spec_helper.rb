@@ -11,7 +11,7 @@ VCR.configure do |c|
   c.default_cassette_options = { record: :once, erb: true }
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
-  c.filter_sensitive_data('<TENK_TOKEN>') { ENV['TENK_TOKEN'] }
+  c.filter_sensitive_data('<TENK_TOKEN>') { 'test-default-token' }
 end
 
 Dotenv.load
@@ -20,7 +20,7 @@ Dotenv.load
 # in ./support/ and its subdirectories.
 Dir["#{File.dirname(__FILE__)}/{support,shared}/**/*.rb"].each { |f| require f }
 
-client = Tenk.new api_base: 'https://vnext.10000ft.com/api/v1', token: ENV['TENK_TOKEN']
+client = Tenk.new api_base: 'https://vnext.10000ft.com/api/v1', token: 'test-default-token'
 
 RSpec.configure do |config|
   config.include WebMock::API
