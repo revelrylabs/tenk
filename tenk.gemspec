@@ -21,5 +21,5 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'bundler', '~> 1'
   s.add_development_dependency 'rake', '< 11.0'
-  s.add_development_dependency 'coveralls', '~> 0.7.1'
+  s.add_development_dependency 'coveralls', '0.7.1'
 end
