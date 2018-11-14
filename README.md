@@ -1,6 +1,6 @@
 # Tenk
 ![TravisCI Build Status](https://travis-ci.org/revelrylabs/tenk.svg?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/revelrylabs/tenk/badge.svg?branch=master)](https://coveralls.io/github/revelrylabs/tenk?branch=master)
+[![Coverage Status](https://opencov.prod.revelry.net/projects/tenk/badge.svg)](https://opencov.prod.revelry.net/projects/tenk)
 
 Tenk is an API wrapper Ruby gem for the 10,000ft Plans API. See
 https://github.com/10Kft/10kft-api for the API documentation.
