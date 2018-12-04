@@ -5,7 +5,7 @@ gemspec
 group :development do
   gem 'byebug'
   # rubocop:disable Style/ExtraSpacing
-  gem 'cucumber',  '~> 2.1'
+  gem 'cucumber',  '~> 3.1'
   gem 'dotenv'
   gem 'rspec',     '~> 2.14.1'
   gem 'simplecov', '~> 0.16.1'
