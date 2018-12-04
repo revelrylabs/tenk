@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.executables << 'tenk'
 
   s.add_dependency 'hashie',      '>= 3'
-  s.add_dependency 'faraday',     '~> 0.8', '< 0.10'
+  s.add_dependency 'faraday',     '~> 0.8', '< 0.16'
   s.add_dependency 'activesupport', '>= 3'
 
   s.add_development_dependency 'bundler', '~> 1'
