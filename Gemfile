@@ -7,7 +7,7 @@ group :development do
   # rubocop:disable Style/ExtraSpacing
   gem 'cucumber',  '~> 2.1'
   gem 'dotenv'
-  gem 'rspec',     '~> 2.14.1'
+  gem 'rspec',     '~> 3.8.0'
   gem 'simplecov', '~> 0.16.1'
   gem 'vcr',       '~> 2.6'
   gem 'webmock',   '~> 1.17.3'
